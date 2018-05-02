@@ -28,21 +28,21 @@
 16. 日志记录：记录后台人员的操作
 # 预览
 ### 首页
-![image]()  
+![image](https://raw.githubusercontent.com/tianbaoo/AwmOnline/master/pic_image/%E9%A6%96%E9%A1%B5.png)  
 ### 公开课
-![image]()  
+![image](https://raw.githubusercontent.com/tianbaoo/AwmOnline/master/pic_image/%E5%85%AC%E5%BC%80%E8%AF%BE.png)  
 ### 机构
-![image]()  
+![image](https://raw.githubusercontent.com/tianbaoo/AwmOnline/master/pic_image/%E6%9C%BA%E6%9E%84%E9%A1%B5.png)  
 ### 教师
-![image]()  
+![image](https://raw.githubusercontent.com/tianbaoo/AwmOnline/master/pic_image/%E6%95%99%E5%B8%88%E9%A1%B5.png)  
 ### 登录
-![image]()  
+![image](https://raw.githubusercontent.com/tianbaoo/AwmOnline/master/pic_image/%E7%99%BB%E5%BD%95.png)  
 ### 注册
-![image]()  
+![image](https://raw.githubusercontent.com/tianbaoo/AwmOnline/master/pic_image/%E6%B3%A8%E5%86%8C%E9%A1%B5.png)  
 ### 个人中心
-![image]()  
+![image](https://raw.githubusercontent.com/tianbaoo/AwmOnline/master/pic_image/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83.png)  
 ### xadmin后台管理
-![image]()  
+![image](https://raw.githubusercontent.com/tianbaoo/AwmOnline/master/pic_image/%E5%90%8E%E5%8F%B0xadmin.png)  
 
 
 
