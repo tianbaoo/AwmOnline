@@ -24,9 +24,9 @@ sys.path.insert(0,os.path.join(BASE_DIR, 'extra_apps'))
 SECRET_KEY = '4-q15!ij=&c!)^c_jecs@31(ef5t1&-&t!(0bc)tjzj!m1cbqx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -153,6 +153,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')   #指定根目录
 #静态文件
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-# xadmin 管理员账户
-# Tianbao
-# guotianbao.+
+

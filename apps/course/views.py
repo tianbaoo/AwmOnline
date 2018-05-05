@@ -5,6 +5,8 @@ from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 from operation.models import CourseComments,UserCourse,UserFavorite
 from utils.mixin_utils import LoginRequiredMixin
 from django.db.models import Q
+from django.views.decorators.cache import cache_page
+
 
 class CourseListView(View):
     '''课程列表'''
@@ -39,6 +41,7 @@ class CourseListView(View):
             'hot_courses':hot_courses,
 
         })
+
 
 class CourseDetailView(View):
     '''课程详情'''

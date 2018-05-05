@@ -16,6 +16,7 @@ from .forms import LoginForm,RegisterForm,ForgetPwdForm,ModifyPwdForm,UploadImag
 from django.contrib.auth.hashers import make_password
 from utils.email_send import send_register_eamil
 from utils.mixin_utils import LoginRequiredMixin
+from django.views.decorators.cache import cache_page
 
 #邮箱和用户名都可以登录
 # 基础ModelBackend类，因为它有authenticate方法
@@ -32,9 +33,9 @@ class CustomBackend(ModelBackend):
         except Exception as e:
             return None
 
+
 class LoginView(View):
     '''用户登录'''
-
     def get(self,request):
         return render(request, 'login.html')
 
@@ -311,6 +312,7 @@ class LogoutView(View):
         from django.urls import reverse
         return HttpResponseRedirect(reverse('index'))
 
+
 class IndexView(View):
     '''首页'''
 
@@ -344,22 +346,4 @@ def page_error(request):
     response.status_code = 500
     return response
 
-
-# def user_login(request):
-#     if request.method == 'POST':
-#         # 获取用户提交的用户名和密码
-#         user_name = request.POST.get('username',None)
-#         pass_word = request.POST.get('password',None)
-#         # 成功返回user对象,失败None
-#         user = authenticate(username=user_name,password=pass_word)
-#         # 如果不是null说明验证成功
-#         if user is not None:
-#             # 登录
-#             login(request,user)
-#             return render(request,'index.html')
-#         else:
-#             return render(request,'login.html',{'msg':'用户名或密码错误'})
-#
-#     elif request.method == 'GET':
-#         return render(request,'login.html')
 

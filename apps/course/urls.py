@@ -9,6 +9,7 @@ from django.urls import path,re_path
 from .views import CourseListView,CourseDetailView,CourseInfoView,CommentsView,AddCommentsView
 from .views import VideoPlayView
 
+
 # 要写上app的名字
 app_name = "course"
 

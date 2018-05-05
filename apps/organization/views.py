@@ -7,8 +7,10 @@ from course.models import Course
 from django.db.models import Q
 from users.views import page_error
 from utils.mixin_utils import LoginRequiredMixin
+from django.views.decorators.cache import cache_page
 
 from .forms import UserAskForm
+
 
 class OrgView(View):
     '''课程机构'''
@@ -101,6 +103,7 @@ class OrgHomeView(View):
             'current_page':current_page,
         })
 
+
 class OrgCourseView(View):
     """
    机构课程列表页
@@ -118,6 +121,7 @@ class OrgCourseView(View):
             'current_page':current_page,
         })
 
+
 class OrgDescView(View):
     '''机构介绍页'''
     def get(self, request, org_id):
@@ -128,6 +132,7 @@ class OrgDescView(View):
             'course_org': course_org,
             'current_page':current_page,
         })
+
 
 class OrgTeacherView(View):
     """
@@ -202,6 +207,7 @@ class AddFavView(View):
                 return HttpResponse('{"status":"success", "msg":"已收藏"}', content_type='application/json')
             else:
                 return HttpResponse('{"status":"fail", "msg":"收藏出错"}', content_type='application/json')
+
 
 class TeacherListView(View):
     def get(self, request):
